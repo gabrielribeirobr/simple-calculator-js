@@ -1,0 +1,21 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: rgb(168, 168, 168);
+  width: 350px;
+  width: fit-content;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttons .btn {
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
