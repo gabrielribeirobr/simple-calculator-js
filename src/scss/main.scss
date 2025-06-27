@@ -12,25 +12,40 @@
   padding: 10px 5px 5px;
 }
 
-table{
+table {
   border-collapse: separate;
-  border-spacing: 10px;
+  border-spacing: 20px;
+
+  td {
+    padding: 0;
+  }
 }
 
 .result {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   background-color: white;
   padding: 8px;
 }
 .buttons {
-  display: flex;
-  gap: 5px;
+ display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+
   .btn {
-    cursor: pointer;
-    font-weight: 4px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    width: 60px;
     height: 60px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+  }
+
+  .btn--equals {
+    grid-row: span 2;
+    height: 130px;
+  }
+
+  .btn--zero {
+    grid-column: span 2;
+    width: 128px;
   }
 }
