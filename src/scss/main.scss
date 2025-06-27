@@ -3,17 +3,34 @@
 }
 
 .container {
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
   background-color: rgb(168, 168, 168);
-  width: 350px;
   width: fit-content;
+  gap: 5px;
+  padding: 10px 5px 5px;
+}
+
+table{
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.result {
+  display: flex;
+  background-color: white;
+  padding: 8px;
 }
 .buttons {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-
+  gap: 5px;
   .btn {
+    cursor: pointer;
+    font-weight: 4px;
     background-color: aliceblue;
     border-radius: 50%;
+    width: 60px;
+    height: 60px;
   }
 }
