@@ -6,7 +6,7 @@
   display: flex;
   border-radius: 5px;
   flex-direction: column;
-  background-color: rgb(168, 168, 168);
+  background-color: rgb(98, 81, 179);
   width: fit-content;
   gap: 5px;
   padding: 10px 5px 5px;
@@ -23,10 +23,13 @@ table {
 
 .result {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  border-radius: 10px;
+  flex-direction: row-reverse;
+  align-items: center;
   background-color: white;
   padding: 8px;
+  height: 50px;
+  margin-bottom: 4px;
 }
 .buttons {
  display: grid;
@@ -35,8 +38,16 @@ table {
 
   .btn {
     height: 60px;
+    font-size: 25px;
     border-radius: 15px;
-    background-color: antiquewhite;
+    background-color: rgb(249, 248, 250);
+  }
+
+  .btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    border-color: white;
   }
 
   .btn--equals {
