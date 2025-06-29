@@ -15,29 +15,31 @@
     <h1>Calculator Javascript</h1>
 
     <div class="container">
-      <div class="result">resultado</div>
+      <div class="result"></div>
       <div class="buttons">
-        <td><button class="btn" data-action="clear">C</button></td>
-        <td><button class="btn" data-action="backspace">←</button></td>
-        <td><button class="btn" data-value="/">/</button></td>
-        <td><button class="btn" data-value="*">*</button></td>
+        <td><button class="btn" onclick="clean()">C</button></td>
+        <td><button class="btn" onclick="backspace()">←</button></td>
+        <td><button class="btn" onclick="insert('/')">/</button></td>
+        <td><button class="btn" onclick="insert('*')">*</button></td>
 
-        <td><button class="btn" data-value="7">7</button></td>
-        <td><button class="btn" data-value="8">8</button></td>
-        <td><button class="btn" data-value="9">9</button></td>
-        <td><button class="btn" data-value="-">-</button></td>
+        <td><button class="btn" onclick="insert('7')">7</button></td>
+        <td><button class="btn" onclick="insert('8')">8</button></td>
+        <td><button class="btn" onclick="insert('9')">9</button></td>
+        <td><button class="btn" onclick="insert('-')">-</button></td>
 
-        <td><button class="btn" data-value="4">4</button></td>
-        <td><button class="btn" data-value="5">5</button></td>
-        <td><button class="btn" data-value="6">6</button></td>
-        <td><button class="btn" data-value="+">+</button></td>
+        <td><button class="btn" onclick="insert('4')">4</button></td>
+        <td><button class="btn" onclick="insert('5')">5</button></td>
+        <td><button class="btn" onclick="insert('6')">6</button></td>
+        <td><button class="btn" onclick="insert('+')">+</button></td>
 
-        <td><button class="btn" data-value="1">1</button></td>
-        <td><button class="btn" data-value="2">2</button></td>
-        <td><button class="btn" data-value="3">3</button></td>
+        <td><button class="btn" onclick="insert('1')">1</button></td>
+        <td><button class="btn" onclick="insert('2')">2</button></td>
+        <td><button class="btn" onclick="insert('3')">3</button></td>
         <button class="btn btn--equals" data-action="equals">=</button>
 
-        <button class="btn btn--zero" style="width: 120px" data-value="0">0</button>
+        <button class="btn btn--zero" style="width: 120px" onclick="insert('0')">
+          0
+        </button>
 
         <button class="btn" data-value=".">.</button>
       </div>
