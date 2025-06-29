@@ -18,7 +18,7 @@
       <div class="result"></div>
       <div class="buttons">
         <td><button class="btn" onclick="clean()">C</button></td>
-        <td><button class="btn" onclick="backspace()">←</button></td>
+        <td><button class="btn" onclick="backSpace()">←</button></td>
         <td><button class="btn" onclick="insert('/')">/</button></td>
         <td><button class="btn" onclick="insert('*')">*</button></td>
 
@@ -35,13 +35,13 @@
         <td><button class="btn" onclick="insert('1')">1</button></td>
         <td><button class="btn" onclick="insert('2')">2</button></td>
         <td><button class="btn" onclick="insert('3')">3</button></td>
-        <button class="btn btn--equals" data-action="equals">=</button>
+        <button class="btn btn--equals" onclick="calculate()">=</button>
 
         <button class="btn btn--zero" style="width: 120px" onclick="insert('0')">
           0
         </button>
 
-        <button class="btn" data-value=".">.</button>
+        <button class="btn" onclick="insert('.')">.</button>
       </div>
     </div>
 
