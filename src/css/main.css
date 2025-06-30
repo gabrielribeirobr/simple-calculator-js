@@ -8,23 +8,19 @@ body {
 
 h1 {
   color: white;
-  font-size: 26px;
+  font-size: 25px;
 }
 
 .container {
   display: flex;
-  border-radius: 5px;
   flex-direction: column;
-  background-color: rgb(98, 81, 179);
-  width: fit-content;
   gap: 5px;
   padding: 10px 5px 5px;
-  border: solid 5px;
-  margin-top: 5%;
-  border-color: rgb(150, 140, 194);
+  width: fit-content;
+  border: 5px solid rgb(150, 140, 194);
+  border-radius: 5px;
+  background-color: rgb(98, 81, 179);
   box-shadow: 12px 12px 5px -2px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 12px 12px 5px -2px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 12px 12px 5px -2px rgba(0, 0, 0, 0.12);
 }
 
 table {
@@ -36,20 +32,20 @@ table td {
 }
 
 .result {
-  font-size: 25px;
   display: flex;
-  border-radius: 10px;
   flex-direction: row-reverse;
   align-items: center;
-  background-color: rgb(219, 219, 219);
-  padding: 8px;
   height: 50px;
+  padding: 8px;
   margin-bottom: 4px;
-  cursor: text;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: rgb(219, 219, 219);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 248px;
+  cursor: text;
 }
 
 .buttons {
@@ -66,8 +62,7 @@ table td {
 .buttons .btn:hover {
   background-color: transparent;
   color: white;
-  border: 1px solid;
-  border-color: white;
+  border: 1px solid white;
 }
 .buttons .btn--equals {
   grid-row: span 2;
