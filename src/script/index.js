@@ -1,7 +1,12 @@
 let result = document.querySelector(".result").textContent;
+
 function insert(num) {
-  let number = document.querySelector(".result").innerHTML;
-  document.querySelector(".result").innerHTML = number + num;
+  const resultElement = document.querySelector(".result");
+  const currentContent = resultElement.innerHTML;
+
+  if (currentContent.length < 15) {
+    resultElement.innerHTML = currentContent + num;
+  }
 }
 
 function clean() {
@@ -9,16 +14,28 @@ function clean() {
 }
 
 function backSpace() {
-  let result = document.querySelector(".result").innerHTML;
-  document.querySelector(".result").innerHTML = result.substring(0, result.length - 1);
+  const resultElement = document.querySelector(".result");
+  const currentContent = resultElement.innerHTML;
+  resultElement.innerHTML = currentContent.slice(0, -1);
 }
 
 function calculate() {
-  let result = document.querySelector(".result").innerHTML;
+  const resultElement = document.querySelector(".result");
+  const expression = resultElement.innerHTML;
 
-  if (result) {
-    document.querySelector(".result").innerHTML = eval(result);
+  if (expression) {
+    try {
+      let calcResult = eval(expression).toString();
+
+      if (calcResult.length > 20) {
+        calcResult = calcResult.slice(0, 15);
+      }
+
+      resultElement.innerHTML = calcResult;
+    } catch (error) {
+      resultElement.innerHTML = "erro";
+    }
   } else {
-    document.querySelector(".result").innerHTML = "número inválido";
+    resultElement.innerHTML = "número inválido";
   }
 }
